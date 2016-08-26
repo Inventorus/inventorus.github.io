@@ -1,0 +1,21 @@
+.inventorus-bg {
+  background-color: #305d16;
+}
+
+.message-container {
+  height: 50vh;
+  font-size: 4vh;
+}
+
+.white-logo-container {
+  height: 10vh;
+  margin-top: 15vh;
+  background-image: url(img/white_logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.block-center {
+  margin: auto;
+}
