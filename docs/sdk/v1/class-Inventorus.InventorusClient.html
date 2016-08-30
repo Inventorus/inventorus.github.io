@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class Inventorus\InventorusClient</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active">
+					<a href="namespace-Inventorus.html">
+						Inventorus<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Inventorus.Models.html">
+						Models					</a>
+
+						</li>
+							</ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Inventorus.Configuration.html">Configuration</a></li>
+				<li class="active"><a href="class-Inventorus.InventorusClient.html">InventorusClient</a></li>
+			</ul>
+
+
+
+			<h3>Exceptions</h3>
+			<ul>
+				<li><a href="class-Inventorus.APIException.html">APIException</a></li>
+			</ul>
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Inventorus.html" title="Summary of Inventorus"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class InventorusClient</h1>
+
+
+	<div class="description">
+	<p>Inventorus client class</p>
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Inventorus.html">Inventorus</a><br>
+		
+
+			<b>Located at</b> <a href="source-class-Inventorus.InventorusClient.html#15-634" title="Go to source code"></a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Inventorus.InventorusClient.html#26-32" title="Go to source code">__construct</a>( <span> <var>$apiKey</var> = <span class="php-keyword1">NULL</span></span> )</code>
+
+		<div class="description short">
+			<p>Constructor with authentication and configuration parameters</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Constructor with authentication and configuration parameters</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setHttpCallBack" id="_setHttpCallBack">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setHttpCallBack">#</a>
+		<code><a href="source-class-Inventorus.InventorusClient.html#34-41" title="Go to source code">setHttpCallBack</a>( <span>Inventorus\Http\HttpCallBack <var>$httpCallBack</var></span> )</code>
+
+		<div class="description short">
+			<p>Set HttpCallBack for this controller</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set HttpCallBack for this controller</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$httpCallBack</var></dt>
+					<dd>Http Callbacks called before/after each API call</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getHttpCallBack" id="_getHttpCallBack">
+
+		<td class="attributes"><code>
+			 public 
+
+			Inventorus\Http\HttpCallBack
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getHttpCallBack">#</a>
+		<code><a href="source-class-Inventorus.InventorusClient.html#43-50" title="Go to source code">getHttpCallBack</a>( )</code>
+
+		<div class="description short">
+			<p>Get HttpCallBack for this controller</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get HttpCallBack for this controller</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					Inventorus\Http\HttpCallBack<br>The HttpCallBack object set for this controller
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getExportHistory" id="_getExportHistory">
+
+		<td class="attributes"><code>
+			 public 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getExportHistory">#</a>
+		<code><a href="source-class-Inventorus.InventorusClient.html#52-104" title="Go to source code">getExportHistory</a>( )</code>
+
+		<div class="description short">
+			<p>Returns ids of all export transactions you have created.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns ids of all export transactions you have created.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					array
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-Inventorus.APIException.html">Inventorus\APIException</a></code><br>Thrown if API call fails
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getUsersItems" id="_getUsersItems">
+
+		<td class="attributes"><code>
+			 public 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getUsersItems">#</a>
+		<code><a href="source-class-Inventorus.InventorusClient.html#106-171" title="Go to source code">getUsersItems</a>( <span>string <var>$steamid</var></span>, <span>uint <var>$appid</var></span>, <span>array <var>$contextids</var> = <span class="php-keyword1">NULL</span></span> )</code>
+
+		<div class="description short">
+			<p>Returns user's items from specific application.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns user's items from specific application.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$steamid</var></dt>
+					<dd>Required parameter: SteamID64 of user's profile</dd>
+					<dt><var>$appid</var></dt>
+					<dd>Required parameter: ID of target application</dd>
+					<dt><var>$contextids</var></dt>
+					<dd>Optional parameter: Array containing numbers representing context ids. By default all contexts are included, but it's recommended to achieve better performance and lower costs.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					array
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-Inventorus.APIException.html">Inventorus\APIException</a></code><br>Thrown if API call fails
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getUsersApps" id="_getUsersApps">
+
+		<td class="attributes"><code>
+			 public 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getUsersApps">#</a>
+		<code><a href="source-class-Inventorus.InventorusClient.html#173-233" title="Go to source code">getUsersApps</a>( <span>string <var>$steamid</var></span>, <span>boolean <var>$includeEmpty</var> = <span class="php-keyword1">NULL</span></span> )</code>
+
+		<div class="description short">
+			<p>Returns applications with inventory items owned by Steam user.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns applications with inventory items owned by Steam user.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$steamid</var></dt>
+					<dd>Required parameter: SteamID64 of user's profile</dd>
+					<dt><var>$includeEmpty</var></dt>
+					<dd>Optional parameter: Include user's apps currently containing no items inside his inventory. Default is set to false.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					array
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-Inventorus.APIException.html">Inventorus\APIException</a></code><br>Thrown if API call fails
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getExport" id="_getExport">
+
+		<td class="attributes"><code>
+			 public 
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getExport">#</a>
+		<code><a href="source-class-Inventorus.InventorusClient.html#235-293" title="Go to source code">getExport</a>( <span>string <var>$id</var></span> )</code>
+
+		<div class="description short">
+			<p>Returns export transaction.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns export transaction.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$id</var></dt>
+					<dd>Required parameter: ID of requested Import transaction</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-Inventorus.APIException.html">Inventorus\APIException</a></code><br>Thrown if API call fails
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="createExport" id="_createExport">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_createExport">#</a>
+		<code><a href="source-class-Inventorus.InventorusClient.html#295-349" title="Go to source code">createExport</a>( <span><code><a href="class-Inventorus.Models.ExportRequest.html">Inventorus\Models\ExportRequest</a></code> <var>$body</var></span> )</code>
+
+		<div class="description short">
+			<p>Creates a new export.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Creates a new export.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$body</var></dt>
+					<dd>Required parameter</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-Inventorus.APIException.html">Inventorus\APIException</a></code><br>Thrown if API call fails
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getImportHistory" id="_getImportHistory">
+
+		<td class="attributes"><code>
+			 public 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getImportHistory">#</a>
+		<code><a href="source-class-Inventorus.InventorusClient.html#351-403" title="Go to source code">getImportHistory</a>( )</code>
+
+		<div class="description short">
+			<p>Returns ids of all import transactions you have created.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns ids of all import transactions you have created.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					array
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-Inventorus.APIException.html">Inventorus\APIException</a></code><br>Thrown if API call fails
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getImport" id="_getImport">
+
+		<td class="attributes"><code>
+			 public 
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getImport">#</a>
+		<code><a href="source-class-Inventorus.InventorusClient.html#405-463" title="Go to source code">getImport</a>( <span>string <var>$id</var></span> )</code>
+
+		<div class="description short">
+			<p>Returns import transaction.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns import transaction.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$id</var></dt>
+					<dd>Required parameter: ID of requested Import transaction</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-Inventorus.APIException.html">Inventorus\APIException</a></code><br>Thrown if API call fails
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="listWarehouse" id="_listWarehouse">
+
+		<td class="attributes"><code>
+			 public 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_listWarehouse">#</a>
+		<code><a href="source-class-Inventorus.InventorusClient.html#465-517" title="Go to source code">listWarehouse</a>( )</code>
+
+		<div class="description short">
+			<p>Returns all currently owned items.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns all currently owned items.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					array
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-Inventorus.APIException.html">Inventorus\APIException</a></code><br>Thrown if API call fails
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="createImport" id="_createImport">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_createImport">#</a>
+		<code><a href="source-class-Inventorus.InventorusClient.html#519-573" title="Go to source code">createImport</a>( <span><code><a href="class-Inventorus.Models.ImportRequest.html">Inventorus\Models\ImportRequest</a></code> <var>$body</var></span> )</code>
+
+		<div class="description short">
+			<p>Creates a new import.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Creates a new import.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$body</var></dt>
+					<dd>Required parameter</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-Inventorus.APIException.html">Inventorus\APIException</a></code><br>Thrown if API call fails
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getItemDetails" id="_getItemDetails">
+
+		<td class="attributes"><code>
+			 public 
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getItemDetails">#</a>
+		<code><a href="source-class-Inventorus.InventorusClient.html#575-633" title="Go to source code">getItemDetails</a>( <span>string <var>$id</var></span> )</code>
+
+		<div class="description short">
+			<p>Returns item details.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns item details.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$id</var></dt>
+					<dd>Required parameter: ID of requested item</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-Inventorus.APIException.html">Inventorus\APIException</a></code><br>Thrown if API call fails
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>
