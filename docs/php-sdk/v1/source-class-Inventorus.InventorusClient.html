@@ -179,7 +179,7 @@
 </span><span id="93" class="l"><a href="#93"> 93: </a>            <span class="php-var">$this</span>-&gt;getHttpCallBack()-&gt;callOnAfterRequest(<span class="php-var">$_httpContext</span>);
 </span><span id="94" class="l"><a href="#94"> 94: </a>        }
 </span><span id="95" class="l"><a href="#95"> 95: </a>
-</span><span id="96" class="l"><a href="#96"> 96: </a>        <span class="php-keyword1">if</span> (!<span class="php-var">$response</span>-&gt;body-&gt;status) {
+</span><span id="96" class="l"><a href="#96"> 96: </a>        <span class="php-keyword1">if</span> (!<span class="php-keyword1">isset</span>(<span class="php-var">$response</span>-&gt;body-&gt;status)) {
 </span><span id="97" class="l"><a href="#97"> 97: </a>          <span class="php-keyword1">throw</span> <span class="php-keyword1">new</span> APIException(<span class="php-quote">'Unexpected error in API call. See HTTP response body for details.'</span>, <span class="php-var">$response</span>-&gt;code, <span class="php-var">$response</span>-&gt;body);
 </span><span id="98" class="l"><a href="#98"> 98: </a>        }
 </span><span id="99" class="l"><a href="#99"> 99: </a>        <span class="php-keyword1">else</span> <span class="php-keyword1">if</span> (<span class="php-var">$response</span>-&gt;body-&gt;status == <span class="php-quote">'error'</span>) {
@@ -243,7 +243,7 @@
 </span><span id="157" class="l"><a href="#157">157: </a>            <span class="php-var">$this</span>-&gt;getHttpCallBack()-&gt;callOnAfterRequest(<span class="php-var">$_httpContext</span>);
 </span><span id="158" class="l"><a href="#158">158: </a>        }
 </span><span id="159" class="l"><a href="#159">159: </a>
-</span><span id="160" class="l"><a href="#160">160: </a>        <span class="php-keyword1">if</span> (!<span class="php-var">$response</span>-&gt;body-&gt;status) {
+</span><span id="160" class="l"><a href="#160">160: </a>        <span class="php-keyword1">if</span> (!<span class="php-keyword1">isset</span>(<span class="php-var">$response</span>-&gt;body-&gt;status)) {
 </span><span id="161" class="l"><a href="#161">161: </a>          <span class="php-keyword1">throw</span> <span class="php-keyword1">new</span> APIException(<span class="php-quote">'Unexpected error in API call. See HTTP response body for details.'</span>, <span class="php-var">$response</span>-&gt;code, <span class="php-var">$response</span>-&gt;body);
 </span><span id="162" class="l"><a href="#162">162: </a>        }
 </span><span id="163" class="l"><a href="#163">163: </a>        <span class="php-keyword1">else</span> <span class="php-keyword1">if</span> (<span class="php-var">$response</span>-&gt;body-&gt;status == <span class="php-quote">'error'</span>) {
@@ -308,7 +308,7 @@
 </span><span id="222" class="l"><a href="#222">222: </a>            <span class="php-var">$this</span>-&gt;getHttpCallBack()-&gt;callOnAfterRequest(<span class="php-var">$_httpContext</span>);
 </span><span id="223" class="l"><a href="#223">223: </a>        }
 </span><span id="224" class="l"><a href="#224">224: </a>
-</span><span id="225" class="l"><a href="#225">225: </a>        <span class="php-keyword1">if</span> (!<span class="php-var">$response</span>-&gt;body-&gt;status) {
+</span><span id="225" class="l"><a href="#225">225: </a>        <span class="php-keyword1">if</span> (!<span class="php-keyword1">isset</span>(<span class="php-var">$response</span>-&gt;body-&gt;status)) {
 </span><span id="226" class="l"><a href="#226">226: </a>          <span class="php-keyword1">throw</span> <span class="php-keyword1">new</span> APIException(<span class="php-quote">'Unexpected error in API call. See HTTP response body for details.'</span>, <span class="php-var">$response</span>-&gt;code, <span class="php-var">$response</span>-&gt;body);
 </span><span id="227" class="l"><a href="#227">227: </a>        }
 </span><span id="228" class="l"><a href="#228">228: </a>        <span class="php-keyword1">else</span> <span class="php-keyword1">if</span> (<span class="php-var">$response</span>-&gt;body-&gt;status == <span class="php-quote">'error'</span>) {
@@ -368,7 +368,7 @@
 </span><span id="282" class="l"><a href="#282">282: </a>            <span class="php-var">$this</span>-&gt;getHttpCallBack()-&gt;callOnAfterRequest(<span class="php-var">$_httpContext</span>);
 </span><span id="283" class="l"><a href="#283">283: </a>        }
 </span><span id="284" class="l"><a href="#284">284: </a>
-</span><span id="285" class="l"><a href="#285">285: </a>        <span class="php-keyword1">if</span> (!<span class="php-var">$response</span>-&gt;body-&gt;status) {
+</span><span id="285" class="l"><a href="#285">285: </a>        <span class="php-keyword1">if</span> (!<span class="php-keyword1">isset</span>(<span class="php-var">$response</span>-&gt;body-&gt;status)) {
 </span><span id="286" class="l"><a href="#286">286: </a>          <span class="php-keyword1">throw</span> <span class="php-keyword1">new</span> APIException(<span class="php-quote">'Unexpected error in API call. See HTTP response body for details.'</span>, <span class="php-var">$response</span>-&gt;code, <span class="php-var">$response</span>-&gt;body);
 </span><span id="287" class="l"><a href="#287">287: </a>        }
 </span><span id="288" class="l"><a href="#288">288: </a>        <span class="php-keyword1">else</span> <span class="php-keyword1">if</span> (<span class="php-var">$response</span>-&gt;body-&gt;status == <span class="php-quote">'error'</span>) {
@@ -424,7 +424,7 @@
 </span><span id="338" class="l"><a href="#338">338: </a>            <span class="php-var">$this</span>-&gt;getHttpCallBack()-&gt;callOnAfterRequest(<span class="php-var">$_httpContext</span>);
 </span><span id="339" class="l"><a href="#339">339: </a>        }
 </span><span id="340" class="l"><a href="#340">340: </a>
-</span><span id="341" class="l"><a href="#341">341: </a>        <span class="php-keyword1">if</span> (!<span class="php-var">$response</span>-&gt;body-&gt;status) {
+</span><span id="341" class="l"><a href="#341">341: </a>        <span class="php-keyword1">if</span> (!<span class="php-keyword1">isset</span>(<span class="php-var">$response</span>-&gt;body-&gt;status)) {
 </span><span id="342" class="l"><a href="#342">342: </a>          <span class="php-keyword1">throw</span> <span class="php-keyword1">new</span> APIException(<span class="php-quote">'Unexpected error in API call. See HTTP response body for details.'</span>, <span class="php-var">$response</span>-&gt;code, <span class="php-var">$response</span>-&gt;body);
 </span><span id="343" class="l"><a href="#343">343: </a>        }
 </span><span id="344" class="l"><a href="#344">344: </a>        <span class="php-keyword1">else</span> <span class="php-keyword1">if</span> (<span class="php-var">$response</span>-&gt;body-&gt;status == <span class="php-quote">'error'</span>) {
@@ -478,7 +478,7 @@
 </span><span id="392" class="l"><a href="#392">392: </a>            <span class="php-var">$this</span>-&gt;getHttpCallBack()-&gt;callOnAfterRequest(<span class="php-var">$_httpContext</span>);
 </span><span id="393" class="l"><a href="#393">393: </a>        }
 </span><span id="394" class="l"><a href="#394">394: </a>
-</span><span id="395" class="l"><a href="#395">395: </a>        <span class="php-keyword1">if</span> (!<span class="php-var">$response</span>-&gt;body-&gt;status) {
+</span><span id="395" class="l"><a href="#395">395: </a>        <span class="php-keyword1">if</span> (!<span class="php-keyword1">isset</span>(<span class="php-var">$response</span>-&gt;body-&gt;status)) {
 </span><span id="396" class="l"><a href="#396">396: </a>          <span class="php-keyword1">throw</span> <span class="php-keyword1">new</span> APIException(<span class="php-quote">'Unexpected error in API call. See HTTP response body for details.'</span>, <span class="php-var">$response</span>-&gt;code, <span class="php-var">$response</span>-&gt;body);
 </span><span id="397" class="l"><a href="#397">397: </a>        }
 </span><span id="398" class="l"><a href="#398">398: </a>        <span class="php-keyword1">else</span> <span class="php-keyword1">if</span> (<span class="php-var">$response</span>-&gt;body-&gt;status == <span class="php-quote">'error'</span>) {
@@ -538,7 +538,7 @@
 </span><span id="452" class="l"><a href="#452">452: </a>            <span class="php-var">$this</span>-&gt;getHttpCallBack()-&gt;callOnAfterRequest(<span class="php-var">$_httpContext</span>);
 </span><span id="453" class="l"><a href="#453">453: </a>        }
 </span><span id="454" class="l"><a href="#454">454: </a>
-</span><span id="455" class="l"><a href="#455">455: </a>        <span class="php-keyword1">if</span> (!<span class="php-var">$response</span>-&gt;body-&gt;status) {
+</span><span id="455" class="l"><a href="#455">455: </a>        <span class="php-keyword1">if</span> (!<span class="php-keyword1">isset</span>(<span class="php-var">$response</span>-&gt;body-&gt;status)) {
 </span><span id="456" class="l"><a href="#456">456: </a>          <span class="php-keyword1">throw</span> <span class="php-keyword1">new</span> APIException(<span class="php-quote">'Unexpected error in API call. See HTTP response body for details.'</span>, <span class="php-var">$response</span>-&gt;code, <span class="php-var">$response</span>-&gt;body);
 </span><span id="457" class="l"><a href="#457">457: </a>        }
 </span><span id="458" class="l"><a href="#458">458: </a>        <span class="php-keyword1">else</span> <span class="php-keyword1">if</span> (<span class="php-var">$response</span>-&gt;body-&gt;status == <span class="php-quote">'error'</span>) {
@@ -592,7 +592,7 @@
 </span><span id="506" class="l"><a href="#506">506: </a>            <span class="php-var">$this</span>-&gt;getHttpCallBack()-&gt;callOnAfterRequest(<span class="php-var">$_httpContext</span>);
 </span><span id="507" class="l"><a href="#507">507: </a>        }
 </span><span id="508" class="l"><a href="#508">508: </a>
-</span><span id="509" class="l"><a href="#509">509: </a>        <span class="php-keyword1">if</span> (!<span class="php-var">$response</span>-&gt;body-&gt;status) {
+</span><span id="509" class="l"><a href="#509">509: </a>        <span class="php-keyword1">if</span> (!<span class="php-keyword1">isset</span>(<span class="php-var">$response</span>-&gt;body-&gt;status)) {
 </span><span id="510" class="l"><a href="#510">510: </a>          <span class="php-keyword1">throw</span> <span class="php-keyword1">new</span> APIException(<span class="php-quote">'Unexpected error in API call. See HTTP response body for details.'</span>, <span class="php-var">$response</span>-&gt;code, <span class="php-var">$response</span>-&gt;body);
 </span><span id="511" class="l"><a href="#511">511: </a>        }
 </span><span id="512" class="l"><a href="#512">512: </a>        <span class="php-keyword1">else</span> <span class="php-keyword1">if</span> (<span class="php-var">$response</span>-&gt;body-&gt;status == <span class="php-quote">'error'</span>) {
@@ -604,7 +604,7 @@
 </span><span id="518" class="l"><a href="#518">518: </a>
 </span><span id="519" class="l"><a href="#519">519: </a>    <span class="php-comment">/**
 </span></span><span id="520" class="l"><a href="#520">520: </a><span class="php-comment">     * Creates a new import.
-</span></span><span id="521" class="l"><a href="#521">521: </a><span class="php-comment">     * @param  Models\ImportRequest $body       Required parameter
+</span></span><span id="521" class="l"><a href="#521">521: </a><span class="php-comment">     * @param  string     $id         Required parameter: ID of Import transaction
 </span></span><span id="522" class="l"><a href="#522">522: </a><span class="php-comment">     * @return string
 </span></span><span id="523" class="l"><a href="#523">523: </a><span class="php-comment">     * @throws APIException Thrown if API call fails
 </span></span><span id="524" class="l"><a href="#524">524: </a><span class="php-comment">     */</span>
@@ -614,7 +614,7 @@
 </span><span id="528" class="l"><a href="#528">528: </a>        <span class="php-var">$_queryBuilder</span> = Configuration::<span class="php-var">$BASEURI</span>;
 </span><span id="529" class="l"><a href="#529">529: </a>
 </span><span id="530" class="l"><a href="#530">530: </a>        <span class="php-comment">//prepare query string for API call</span>
-</span><span id="531" class="l"><a href="#531">531: </a>        <span class="php-var">$_queryBuilder</span> = <span class="php-var">$_queryBuilder</span>.<span class="php-quote">'/warehouse/import'</span>;
+</span><span id="531" class="l"><a href="#531">531: </a>        <span class="php-var">$_queryBuilder</span> = <span class="php-var">$_queryBuilder</span>.<span class="php-quote">'/warehouse/imports'</span>;
 </span><span id="532" class="l"><a href="#532">532: </a>
 </span><span id="533" class="l"><a href="#533">533: </a>        <span class="php-comment">//process optional query parameters</span>
 </span><span id="534" class="l"><a href="#534">534: </a>        APIHelper::appendUrlWithQueryParameters(<span class="php-var">$_queryBuilder</span>, <span class="php-keyword1">array</span> (
@@ -648,7 +648,7 @@
 </span><span id="562" class="l"><a href="#562">562: </a>            <span class="php-var">$this</span>-&gt;getHttpCallBack()-&gt;callOnAfterRequest(<span class="php-var">$_httpContext</span>);
 </span><span id="563" class="l"><a href="#563">563: </a>        }
 </span><span id="564" class="l"><a href="#564">564: </a>
-</span><span id="565" class="l"><a href="#565">565: </a>        <span class="php-keyword1">if</span> (!<span class="php-var">$response</span>-&gt;body-&gt;status) {
+</span><span id="565" class="l"><a href="#565">565: </a>        <span class="php-keyword1">if</span> (!<span class="php-keyword1">isset</span>(<span class="php-var">$response</span>-&gt;body-&gt;status)) {
 </span><span id="566" class="l"><a href="#566">566: </a>          <span class="php-keyword1">throw</span> <span class="php-keyword1">new</span> APIException(<span class="php-quote">'Unexpected error in API call. See HTTP response body for details.'</span>, <span class="php-var">$response</span>-&gt;code, <span class="php-var">$response</span>-&gt;body);
 </span><span id="567" class="l"><a href="#567">567: </a>        }
 </span><span id="568" class="l"><a href="#568">568: </a>        <span class="php-keyword1">else</span> <span class="php-keyword1">if</span> (<span class="php-var">$response</span>-&gt;body-&gt;status == <span class="php-quote">'error'</span>) {
@@ -659,27 +659,27 @@
 </span><span id="573" class="l"><a href="#573">573: </a>    }
 </span><span id="574" class="l"><a href="#574">574: </a>
 </span><span id="575" class="l"><a href="#575">575: </a>    <span class="php-comment">/**
-</span></span><span id="576" class="l"><a href="#576">576: </a><span class="php-comment">     * Returns item details.
-</span></span><span id="577" class="l"><a href="#577">577: </a><span class="php-comment">     * @param  string     $id         Required parameter: ID of requested item
-</span></span><span id="578" class="l"><a href="#578">578: </a><span class="php-comment">     * @return mixed
+</span></span><span id="576" class="l"><a href="#576">576: </a><span class="php-comment">     * Cancels an unfinished import.
+</span></span><span id="577" class="l"><a href="#577">577: </a><span class="php-comment">     * @param  $id       Required parameter
+</span></span><span id="578" class="l"><a href="#578">578: </a><span class="php-comment">     * @return boolean
 </span></span><span id="579" class="l"><a href="#579">579: </a><span class="php-comment">     * @throws APIException Thrown if API call fails
 </span></span><span id="580" class="l"><a href="#580">580: </a><span class="php-comment">     */</span>
-</span><span id="581" class="l"><a href="#581">581: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> getItemDetails (<span class="php-var">$id</span>)
+</span><span id="581" class="l"><a href="#581">581: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> cancelImport (<span class="php-var">$id</span>)
 </span><span id="582" class="l"><a href="#582">582: </a>    {
 </span><span id="583" class="l"><a href="#583">583: </a>        <span class="php-comment">//the base uri for api requests</span>
 </span><span id="584" class="l"><a href="#584">584: </a>        <span class="php-var">$_queryBuilder</span> = Configuration::<span class="php-var">$BASEURI</span>;
 </span><span id="585" class="l"><a href="#585">585: </a>
 </span><span id="586" class="l"><a href="#586">586: </a>        <span class="php-comment">//prepare query string for API call</span>
-</span><span id="587" class="l"><a href="#587">587: </a>        <span class="php-var">$_queryBuilder</span> = <span class="php-var">$_queryBuilder</span>.<span class="php-quote">'/warehouse/items/{id}'</span>;
+</span><span id="587" class="l"><a href="#587">587: </a>        <span class="php-var">$_queryBuilder</span> = <span class="php-var">$_queryBuilder</span>.<span class="php-quote">'/warehouse/imports/{id}/cancel/'</span>;
 </span><span id="588" class="l"><a href="#588">588: </a>
 </span><span id="589" class="l"><a href="#589">589: </a>        <span class="php-comment">//process optional query parameters</span>
 </span><span id="590" class="l"><a href="#590">590: </a>        APIHelper::appendUrlWithTemplateParameters(<span class="php-var">$_queryBuilder</span>, <span class="php-keyword1">array</span> (
-</span><span id="591" class="l"><a href="#591">591: </a>            <span class="php-quote">'id'</span>     =&gt; <span class="php-var">$id</span>,
-</span><span id="592" class="l"><a href="#592">592: </a>            ));
+</span><span id="591" class="l"><a href="#591">591: </a>          <span class="php-quote">'id'</span>     =&gt; <span class="php-var">$id</span>,
+</span><span id="592" class="l"><a href="#592">592: </a>        ));
 </span><span id="593" class="l"><a href="#593">593: </a>
 </span><span id="594" class="l"><a href="#594">594: </a>        <span class="php-comment">//process optional query parameters</span>
 </span><span id="595" class="l"><a href="#595">595: </a>        APIHelper::appendUrlWithQueryParameters(<span class="php-var">$_queryBuilder</span>, <span class="php-keyword1">array</span> (
-</span><span id="596" class="l"><a href="#596">596: </a>            <span class="php-quote">'apiKey'</span> =&gt; Configuration::<span class="php-var">$apiKey</span>,
+</span><span id="596" class="l"><a href="#596">596: </a>          <span class="php-quote">'apiKey'</span> =&gt; Configuration::<span class="php-var">$apiKey</span>,
 </span><span id="597" class="l"><a href="#597">597: </a>        ));
 </span><span id="598" class="l"><a href="#598">598: </a>
 </span><span id="599" class="l"><a href="#599">599: </a>        <span class="php-comment">//validate and preprocess url</span>
@@ -687,38 +687,99 @@
 </span><span id="601" class="l"><a href="#601">601: </a>
 </span><span id="602" class="l"><a href="#602">602: </a>        <span class="php-comment">//prepare headers</span>
 </span><span id="603" class="l"><a href="#603">603: </a>        <span class="php-var">$_headers</span> = <span class="php-keyword1">array</span> (
-</span><span id="604" class="l"><a href="#604">604: </a>            <span class="php-quote">'user-agent'</span>    =&gt; <span class="php-quote">'APIMATIC 2.0'</span>,
-</span><span id="605" class="l"><a href="#605">605: </a>            <span class="php-quote">'Accept'</span>        =&gt; <span class="php-quote">'application/json'</span>
-</span><span id="606" class="l"><a href="#606">606: </a>        );
-</span><span id="607" class="l"><a href="#607">607: </a>
-</span><span id="608" class="l"><a href="#608">608: </a>        <span class="php-comment">//call on-before Http callback</span>
-</span><span id="609" class="l"><a href="#609">609: </a>        <span class="php-var">$_httpRequest</span> = <span class="php-keyword1">new</span> HttpRequest(HttpMethod::GET, <span class="php-var">$_headers</span>, <span class="php-var">$_queryUrl</span>);
-</span><span id="610" class="l"><a href="#610">610: </a>        <span class="php-keyword1">if</span>(<span class="php-var">$this</span>-&gt;getHttpCallBack() != <span class="php-keyword1">null</span>) {
-</span><span id="611" class="l"><a href="#611">611: </a>            <span class="php-var">$this</span>-&gt;getHttpCallBack()-&gt;callOnBeforeRequest(<span class="php-var">$_httpRequest</span>);
-</span><span id="612" class="l"><a href="#612">612: </a>        }
-</span><span id="613" class="l"><a href="#613">613: </a>
-</span><span id="614" class="l"><a href="#614">614: </a>        <span class="php-comment">//and invoke the API call request to fetch the response</span>
-</span><span id="615" class="l"><a href="#615">615: </a>        <span class="php-var">$response</span> = Request::get(<span class="php-var">$_queryUrl</span>, <span class="php-var">$_headers</span>);
-</span><span id="616" class="l"><a href="#616">616: </a>
-</span><span id="617" class="l"><a href="#617">617: </a>        <span class="php-comment">//call on-after Http callback</span>
-</span><span id="618" class="l"><a href="#618">618: </a>        <span class="php-keyword1">if</span>(<span class="php-var">$this</span>-&gt;getHttpCallBack() != <span class="php-keyword1">null</span>) {
-</span><span id="619" class="l"><a href="#619">619: </a>            <span class="php-var">$_httpResponse</span> = <span class="php-keyword1">new</span> HttpResponse(<span class="php-var">$response</span>-&gt;code, <span class="php-var">$response</span>-&gt;headers, <span class="php-var">$response</span>-&gt;raw_body);
-</span><span id="620" class="l"><a href="#620">620: </a>            <span class="php-var">$_httpContext</span> = <span class="php-keyword1">new</span> HttpContext(<span class="php-var">$_httpRequest</span>, <span class="php-var">$_httpResponse</span>);
-</span><span id="621" class="l"><a href="#621">621: </a>
-</span><span id="622" class="l"><a href="#622">622: </a>            <span class="php-var">$this</span>-&gt;getHttpCallBack()-&gt;callOnAfterRequest(<span class="php-var">$_httpContext</span>);
-</span><span id="623" class="l"><a href="#623">623: </a>        }
-</span><span id="624" class="l"><a href="#624">624: </a>
-</span><span id="625" class="l"><a href="#625">625: </a>        <span class="php-keyword1">if</span> (!<span class="php-var">$response</span>-&gt;body-&gt;status) {
-</span><span id="626" class="l"><a href="#626">626: </a>          <span class="php-keyword1">throw</span> <span class="php-keyword1">new</span> APIException(<span class="php-quote">'Unexpected error in API call. See HTTP response body for details.'</span>, <span class="php-var">$response</span>-&gt;code, <span class="php-var">$response</span>-&gt;body);
-</span><span id="627" class="l"><a href="#627">627: </a>        }
-</span><span id="628" class="l"><a href="#628">628: </a>        <span class="php-keyword1">else</span> <span class="php-keyword1">if</span> (<span class="php-var">$response</span>-&gt;body-&gt;status == <span class="php-quote">'error'</span>) {
-</span><span id="629" class="l"><a href="#629">629: </a>          <span class="php-keyword1">throw</span> <span class="php-keyword1">new</span> APIException(<span class="php-quote">'API responded with error status.'</span>, <span class="php-var">$response</span>-&gt;code, <span class="php-var">$response</span>-&gt;body);
-</span><span id="630" class="l"><a href="#630">630: </a>        }
-</span><span id="631" class="l"><a href="#631">631: </a>
-</span><span id="632" class="l"><a href="#632">632: </a>        <span class="php-keyword1">return</span> <span class="php-var">$response</span>-&gt;body-&gt;response-&gt;data-&gt;item;
-</span><span id="633" class="l"><a href="#633">633: </a>    }
-</span><span id="634" class="l"><a href="#634">634: </a>}
-</span><span id="635" class="l"><a href="#635">635: </a></span></code></pre>
+</span><span id="604" class="l"><a href="#604">604: </a>          <span class="php-quote">'user-agent'</span>    =&gt; <span class="php-quote">'APIMATIC 2.0'</span>,
+</span><span id="605" class="l"><a href="#605">605: </a>          <span class="php-quote">'Accept'</span>        =&gt; <span class="php-quote">'application/json'</span>,
+</span><span id="606" class="l"><a href="#606">606: </a>          <span class="php-quote">'content-type'</span>  =&gt; <span class="php-quote">'application/json; charset=utf-8'</span>
+</span><span id="607" class="l"><a href="#607">607: </a>        );
+</span><span id="608" class="l"><a href="#608">608: </a>
+</span><span id="609" class="l"><a href="#609">609: </a>        <span class="php-comment">//call on-before Http callback</span>
+</span><span id="610" class="l"><a href="#610">610: </a>        <span class="php-var">$_httpRequest</span> = <span class="php-keyword1">new</span> HttpRequest(HttpMethod::GET, <span class="php-var">$_headers</span>, <span class="php-var">$_queryUrl</span>);
+</span><span id="611" class="l"><a href="#611">611: </a>        <span class="php-keyword1">if</span>(<span class="php-var">$this</span>-&gt;getHttpCallBack() != <span class="php-keyword1">null</span>) {
+</span><span id="612" class="l"><a href="#612">612: </a>            <span class="php-var">$this</span>-&gt;getHttpCallBack()-&gt;callOnBeforeRequest(<span class="php-var">$_httpRequest</span>);
+</span><span id="613" class="l"><a href="#613">613: </a>        }
+</span><span id="614" class="l"><a href="#614">614: </a>
+</span><span id="615" class="l"><a href="#615">615: </a>        <span class="php-comment">//and invoke the API call request to fetch the response</span>
+</span><span id="616" class="l"><a href="#616">616: </a>        <span class="php-var">$response</span> = Request::post(<span class="php-var">$_queryUrl</span>, <span class="php-var">$_headers</span>);
+</span><span id="617" class="l"><a href="#617">617: </a>
+</span><span id="618" class="l"><a href="#618">618: </a>        <span class="php-comment">//call on-after Http callback</span>
+</span><span id="619" class="l"><a href="#619">619: </a>        <span class="php-keyword1">if</span>(<span class="php-var">$this</span>-&gt;getHttpCallBack() != <span class="php-keyword1">null</span>) {
+</span><span id="620" class="l"><a href="#620">620: </a>            <span class="php-var">$_httpResponse</span> = <span class="php-keyword1">new</span> HttpResponse(<span class="php-var">$response</span>-&gt;code, <span class="php-var">$response</span>-&gt;headers, <span class="php-var">$response</span>-&gt;raw_body);
+</span><span id="621" class="l"><a href="#621">621: </a>            <span class="php-var">$_httpContext</span> = <span class="php-keyword1">new</span> HttpContext(<span class="php-var">$_httpRequest</span>, <span class="php-var">$_httpResponse</span>);
+</span><span id="622" class="l"><a href="#622">622: </a>
+</span><span id="623" class="l"><a href="#623">623: </a>            <span class="php-var">$this</span>-&gt;getHttpCallBack()-&gt;callOnAfterRequest(<span class="php-var">$_httpContext</span>);
+</span><span id="624" class="l"><a href="#624">624: </a>        }
+</span><span id="625" class="l"><a href="#625">625: </a>
+</span><span id="626" class="l"><a href="#626">626: </a>        <span class="php-keyword1">if</span> (!<span class="php-keyword1">isset</span>(<span class="php-var">$response</span>-&gt;body-&gt;status)) {
+</span><span id="627" class="l"><a href="#627">627: </a>          <span class="php-keyword1">throw</span> <span class="php-keyword1">new</span> APIException(<span class="php-quote">'Unexpected error in API call. See HTTP response body for details.'</span>, <span class="php-var">$response</span>-&gt;code, <span class="php-var">$response</span>-&gt;body);
+</span><span id="628" class="l"><a href="#628">628: </a>        }
+</span><span id="629" class="l"><a href="#629">629: </a>        <span class="php-keyword1">else</span> <span class="php-keyword1">if</span> (<span class="php-var">$response</span>-&gt;body-&gt;status == <span class="php-quote">'error'</span>) {
+</span><span id="630" class="l"><a href="#630">630: </a>          <span class="php-keyword1">throw</span> <span class="php-keyword1">new</span> APIException(<span class="php-quote">'API responded with error status.'</span>, <span class="php-var">$response</span>-&gt;code, <span class="php-var">$response</span>-&gt;body);
+</span><span id="631" class="l"><a href="#631">631: </a>        }
+</span><span id="632" class="l"><a href="#632">632: </a>
+</span><span id="633" class="l"><a href="#633">633: </a>        <span class="php-keyword1">return</span> <span class="php-keyword1">true</span>;
+</span><span id="634" class="l"><a href="#634">634: </a>    }
+</span><span id="635" class="l"><a href="#635">635: </a>
+</span><span id="636" class="l"><a href="#636">636: </a>    <span class="php-comment">/**
+</span></span><span id="637" class="l"><a href="#637">637: </a><span class="php-comment">     * Returns item details.
+</span></span><span id="638" class="l"><a href="#638">638: </a><span class="php-comment">     * @param  string     $id         Required parameter: ID of requested item
+</span></span><span id="639" class="l"><a href="#639">639: </a><span class="php-comment">     * @return mixed
+</span></span><span id="640" class="l"><a href="#640">640: </a><span class="php-comment">     * @throws APIException Thrown if API call fails
+</span></span><span id="641" class="l"><a href="#641">641: </a><span class="php-comment">     */</span>
+</span><span id="642" class="l"><a href="#642">642: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> getItemDetails (<span class="php-var">$id</span>)
+</span><span id="643" class="l"><a href="#643">643: </a>    {
+</span><span id="644" class="l"><a href="#644">644: </a>        <span class="php-comment">//the base uri for api requests</span>
+</span><span id="645" class="l"><a href="#645">645: </a>        <span class="php-var">$_queryBuilder</span> = Configuration::<span class="php-var">$BASEURI</span>;
+</span><span id="646" class="l"><a href="#646">646: </a>
+</span><span id="647" class="l"><a href="#647">647: </a>        <span class="php-comment">//prepare query string for API call</span>
+</span><span id="648" class="l"><a href="#648">648: </a>        <span class="php-var">$_queryBuilder</span> = <span class="php-var">$_queryBuilder</span>.<span class="php-quote">'/warehouse/items/{id}'</span>;
+</span><span id="649" class="l"><a href="#649">649: </a>
+</span><span id="650" class="l"><a href="#650">650: </a>        <span class="php-comment">//process optional query parameters</span>
+</span><span id="651" class="l"><a href="#651">651: </a>        APIHelper::appendUrlWithTemplateParameters(<span class="php-var">$_queryBuilder</span>, <span class="php-keyword1">array</span> (
+</span><span id="652" class="l"><a href="#652">652: </a>            <span class="php-quote">'id'</span>     =&gt; <span class="php-var">$id</span>,
+</span><span id="653" class="l"><a href="#653">653: </a>            ));
+</span><span id="654" class="l"><a href="#654">654: </a>
+</span><span id="655" class="l"><a href="#655">655: </a>        <span class="php-comment">//process optional query parameters</span>
+</span><span id="656" class="l"><a href="#656">656: </a>        APIHelper::appendUrlWithQueryParameters(<span class="php-var">$_queryBuilder</span>, <span class="php-keyword1">array</span> (
+</span><span id="657" class="l"><a href="#657">657: </a>            <span class="php-quote">'apiKey'</span> =&gt; Configuration::<span class="php-var">$apiKey</span>,
+</span><span id="658" class="l"><a href="#658">658: </a>        ));
+</span><span id="659" class="l"><a href="#659">659: </a>
+</span><span id="660" class="l"><a href="#660">660: </a>        <span class="php-comment">//validate and preprocess url</span>
+</span><span id="661" class="l"><a href="#661">661: </a>        <span class="php-var">$_queryUrl</span> = APIHelper::cleanUrl(<span class="php-var">$_queryBuilder</span>);
+</span><span id="662" class="l"><a href="#662">662: </a>
+</span><span id="663" class="l"><a href="#663">663: </a>        <span class="php-comment">//prepare headers</span>
+</span><span id="664" class="l"><a href="#664">664: </a>        <span class="php-var">$_headers</span> = <span class="php-keyword1">array</span> (
+</span><span id="665" class="l"><a href="#665">665: </a>            <span class="php-quote">'user-agent'</span>    =&gt; <span class="php-quote">'APIMATIC 2.0'</span>,
+</span><span id="666" class="l"><a href="#666">666: </a>            <span class="php-quote">'Accept'</span>        =&gt; <span class="php-quote">'application/json'</span>
+</span><span id="667" class="l"><a href="#667">667: </a>        );
+</span><span id="668" class="l"><a href="#668">668: </a>
+</span><span id="669" class="l"><a href="#669">669: </a>        <span class="php-comment">//call on-before Http callback</span>
+</span><span id="670" class="l"><a href="#670">670: </a>        <span class="php-var">$_httpRequest</span> = <span class="php-keyword1">new</span> HttpRequest(HttpMethod::GET, <span class="php-var">$_headers</span>, <span class="php-var">$_queryUrl</span>);
+</span><span id="671" class="l"><a href="#671">671: </a>        <span class="php-keyword1">if</span>(<span class="php-var">$this</span>-&gt;getHttpCallBack() != <span class="php-keyword1">null</span>) {
+</span><span id="672" class="l"><a href="#672">672: </a>            <span class="php-var">$this</span>-&gt;getHttpCallBack()-&gt;callOnBeforeRequest(<span class="php-var">$_httpRequest</span>);
+</span><span id="673" class="l"><a href="#673">673: </a>        }
+</span><span id="674" class="l"><a href="#674">674: </a>
+</span><span id="675" class="l"><a href="#675">675: </a>        <span class="php-comment">//and invoke the API call request to fetch the response</span>
+</span><span id="676" class="l"><a href="#676">676: </a>        <span class="php-var">$response</span> = Request::get(<span class="php-var">$_queryUrl</span>, <span class="php-var">$_headers</span>);
+</span><span id="677" class="l"><a href="#677">677: </a>
+</span><span id="678" class="l"><a href="#678">678: </a>        <span class="php-comment">//call on-after Http callback</span>
+</span><span id="679" class="l"><a href="#679">679: </a>        <span class="php-keyword1">if</span>(<span class="php-var">$this</span>-&gt;getHttpCallBack() != <span class="php-keyword1">null</span>) {
+</span><span id="680" class="l"><a href="#680">680: </a>            <span class="php-var">$_httpResponse</span> = <span class="php-keyword1">new</span> HttpResponse(<span class="php-var">$response</span>-&gt;code, <span class="php-var">$response</span>-&gt;headers, <span class="php-var">$response</span>-&gt;raw_body);
+</span><span id="681" class="l"><a href="#681">681: </a>            <span class="php-var">$_httpContext</span> = <span class="php-keyword1">new</span> HttpContext(<span class="php-var">$_httpRequest</span>, <span class="php-var">$_httpResponse</span>);
+</span><span id="682" class="l"><a href="#682">682: </a>
+</span><span id="683" class="l"><a href="#683">683: </a>            <span class="php-var">$this</span>-&gt;getHttpCallBack()-&gt;callOnAfterRequest(<span class="php-var">$_httpContext</span>);
+</span><span id="684" class="l"><a href="#684">684: </a>        }
+</span><span id="685" class="l"><a href="#685">685: </a>
+</span><span id="686" class="l"><a href="#686">686: </a>        <span class="php-keyword1">if</span> (!<span class="php-keyword1">isset</span>(<span class="php-var">$response</span>-&gt;body-&gt;status)) {
+</span><span id="687" class="l"><a href="#687">687: </a>          <span class="php-keyword1">throw</span> <span class="php-keyword1">new</span> APIException(<span class="php-quote">'Unexpected error in API call. See HTTP response body for details.'</span>, <span class="php-var">$response</span>-&gt;code, <span class="php-var">$response</span>-&gt;body);
+</span><span id="688" class="l"><a href="#688">688: </a>        }
+</span><span id="689" class="l"><a href="#689">689: </a>        <span class="php-keyword1">else</span> <span class="php-keyword1">if</span> (<span class="php-var">$response</span>-&gt;body-&gt;status == <span class="php-quote">'error'</span>) {
+</span><span id="690" class="l"><a href="#690">690: </a>          <span class="php-keyword1">throw</span> <span class="php-keyword1">new</span> APIException(<span class="php-quote">'API responded with error status.'</span>, <span class="php-var">$response</span>-&gt;code, <span class="php-var">$response</span>-&gt;body);
+</span><span id="691" class="l"><a href="#691">691: </a>        }
+</span><span id="692" class="l"><a href="#692">692: </a>
+</span><span id="693" class="l"><a href="#693">693: </a>        <span class="php-keyword1">return</span> <span class="php-var">$response</span>-&gt;body-&gt;response-&gt;data-&gt;item;
+</span><span id="694" class="l"><a href="#694">694: </a>    }
+</span><span id="695" class="l"><a href="#695">695: </a>}
+</span><span id="696" class="l"><a href="#696">696: </a></span></code></pre>
 
 	<div id="footer">
 		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
